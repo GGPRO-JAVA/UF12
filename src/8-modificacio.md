@@ -9,11 +9,11 @@ La diferència és que **els mètodes updateXXX() necessiten dos arguments**:
 - **La columna que desitgem actualitzar** (pel seu nom o pel seu número de columna).
 - **El valor que volem emmagatzemar** en aquesta columna (del tipus que siga).
 
-Per exemple per a modificar el camp ‘edat’ emmagatzemant el sencer 28 caldria cridar al següent mètode, suposant que rs és un objecte ResultSet:
+Per exemple per a modificar el camp ‘edat' emmagatzemant el sencer 28 caldria cridar al següent mètode, suposant que rs és un objecte ResultSet:
 
 `rs.updateInt("edat", 28);`
 
-També podria fer-se de la següent manera, suposant que la columna “edat” és la segona:
+També podria fer-se de la següent manera, suposant que la columna "edat" és la segona:
 
 `rs.updateInt(2, 28);`
 
@@ -29,7 +29,7 @@ En resum, el procés per a realitzar la modificació d'una fila d'un ResultSet �
 
 És important entendre que **cal cridar a updateRow() abans de desplaçar el cursor**. Si desplacem el cursor abans de cridar a updateRow(), es perdran els canvis. Si volem **cancel·lar les modificacions d'un registre del ResultSet** podem cridar a **cancelRowUpdates()**, que cancel·la totes les modificacions realitzades sobre el registre actual. Si ja hem anomenat a updateRow() el mètode cancelRowUpdates() no tindrà cap efecte.
 
-El següent codi d'exemple mostra com modificar el camp ‘direcció’ de l'últim registre d'un ResultSet que conté el resultat d'un SELECT sobre la taula de clients. Suposarem que conn és un objecte Connection previament creat:
+El següent codi d'exemple mostra com modificar el camp ‘direcció' de l'últim registre d'un ResultSet que conté el resultat d'un SELECT sobre la taula de clients. Suposarem que conn és un objecte Connection previament creat:
 
 ::: tabs
 == Java

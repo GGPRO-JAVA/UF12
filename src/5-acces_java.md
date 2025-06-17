@@ -4,7 +4,7 @@ En aquest apartat s'ofereix una introducció als aspectes fonamentals de l'accé
 
 ## 5.1 Afegir la llibreria JDBC al projecte
 
-Per a poder utilitzar la llibreria JDBC en un projecte Java primer haurem d'afegir-la al projecte. Per a això hem de fer clic dret sobre la carpeta ‘Libraries’ del projecte i seleccionar ‘Add JAR/Folder’. En la finestra emergent haurem de seleccionar l'arxiu del driver prèviament descarregat mysql-connector-java-9.2.0.jar i clic en OK.
+Per a poder utilitzar la llibreria JDBC en un projecte Java primer haurem d'afegir-la al projecte. Per a això hem de fer clic dret sobre la carpeta ‘Libraries' del projecte i seleccionar ‘Add JAR/Folder'. En la finestra emergent haurem de seleccionar l'arxiu del driver prèviament descarregat mysql-connector-java-9.2.0.jar i clic en OK.
 
 ![JDBC](/uf12/add_library.png)
 
@@ -58,7 +58,7 @@ La classe java.sql.DriverManager és la capa gestora del driver JDBC. S'encarreg
 
 Aquest mètode intentarà establir una connexió amb la base de dades segons la URL indicada. Opcionalment se li pot passar l'usuari i contrasenya com a argument (també es pot indicar en la pròpia URL). Si la connexió és satisfactòria retornarà un objecte Connection.
 
-Exemple de connexió a la base de dades ‘prova’ en localhost:
+Exemple de connexió a la base de dades ‘prova' en localhost:
 
 `String url = "jdbc:mysql://localhost:3306/prova";`  
 `Connection conn = DriverManager.getConnection(url,"root","");`
@@ -82,7 +82,7 @@ Quan ja no la necessitem és aconsellable **tancar la connexió amb close()** pe
 
 ## 5.5 Classe Statement
 
-Un objecte java.sql.Statement permet executar sentències SQL en la base de dades a través de la connexió amb la qual es va crear el Statement (veure apartat anterior). Els tres mètodes més comuns d’execució de sentències SQL són executeQuery(…), executeUpdate(…) i execute(…). Poden llançar excepcions de tipus SQLException i SQLTimeoutException.
+Un objecte java.sql.Statement permet executar sentències SQL en la base de dades a través de la connexió amb la qual es va crear el Statement (veure apartat anterior). Els tres mètodes més comuns d'execució de sentències SQL són executeQuery(…), executeUpdate(…) i execute(…). Poden llançar excepcions de tipus SQLException i SQLTimeoutException.
 
 - **ResultSet executeQuery(String sql)**: Executa la sentència sql indicada (de tipus SELECT). Retorna un objecte ResultSet amb les dades proporcionades pel servidor. 
 
@@ -100,7 +100,7 @@ Quan ja no ho necessitem és aconsellable tancar el statement amb close() per a 
 
 Un objecte java.sql.ResultSet conté un conjunt de resultats (dades) obtinguts després d'executar una sentència SQL, normalment de tipus SELECT. És una estructura de dades en forma de taula amb registres (files) que podem recórrer per a accedir a la informació dels seus camps (columnes).
 
-ResultSet utilitza internament un cursor que apunta al ‘registre actual’ sobre el qual podem operar. Inicialment aquest cursor està situat abans de la primera fila i disposem de diversos mètodes per a desplaçar el cursor. El més comú és next():
+ResultSet utilitza internament un cursor que apunta al ‘registre actual' sobre el qual podem operar. Inicialment aquest cursor està situat abans de la primera fila i disposem de diversos mètodes per a desplaçar el cursor. El més comú és next():
 
 - boolean next(): Mou el cursor al següent registre. Retorna true si va anar possible i false en cas contrari (si ja arribem al final de la taula).
 

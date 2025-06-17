@@ -54,7 +54,7 @@ Tractar la possible excepció *SQLException.
 
 ## Exercici 2
 
-Modificar l’exercici 1 per a utilitzar el autoClose i per a mostrar per consola tots els atributs de cadascun.
+Modificar l'exercici 1 per a utilitzar el autoClose i per a mostrar per consola tots els atributs de cadascun.
 
 ![Exercici](/uf12/exercici2.png)
 
@@ -74,14 +74,14 @@ Modifica l'exercici 3 per a:
    - Un mètode **crearTablaProductos()** que crearà la taula "productos2" i afegirà 5 productes (la taula tindrà les mateixes columnes que "productos1").  
     Nota: per a la data es pot importar la classe `import java.sql.Date;`
 
-2. Afegir al mètode main() una comprovació que si la taula "productos2" no existeix, la crea cridant als mètodes que s’han creat al punt anterior.
-3. Extrau del AutoClose la declaració del Statement i del ResultSet, ja que s’hauran de executar després de la comprovació anterior.
+2. Afegir al mètode main() una comprovació que si la taula "productos2" no existeix, la crea cridant als mètodes que s'han creat al punt anterior.
+3. Extrau del AutoClose la declaració del Statement i del ResultSet, ja que s'hauran de executar després de la comprovació anterior.
 
 ![Exercici](/uf12/exercici4.png)
 
 ## Exercici 5
 
-Modifica el exercici 4 per a mostrar cada registre filtrant la consulta per la seua “SECCION” i el seu “PAIS”. S’ha d’utilitzar la classe “PreparedStatement” concretament el mètode prepareStatement(query) per a preparar la consulta i després afegir els valors per a filtrar com a paràmetres.
+Modifica el exercici 4 per a mostrar cada registre filtrant la consulta per la seua "SECCION" i el seu "PAIS". S'ha d'utilitzar la classe "PreparedStatement" concretament el mètode prepareStatement(query) per a preparar la consulta i després afegir els valors per a filtrar com a paràmetres.
 
 ![Exercici](/uf12/exercici5.png)
 
@@ -89,9 +89,9 @@ Modifica el exercici 4 per a mostrar cada registre filtrant la consulta per la s
 
 Modifica el exercici 5 afegint una segona consulta després de mostrar la del exercici 5.
 
-Esta ha de modificar les dades de la consulta anterior (amb UPDATE), canviant el preu del/s producte/s “PRECIO” a 9999.
+Esta ha de modificar les dades de la consulta anterior (amb UPDATE), canviant el preu del/s producte/s "PRECIO" a 9999.
 
-S’ha d’utilitzar la classe “PreparedStatement” per a preparar la consulta i després afegir els valors a canviar com a paràmetres.
+S'ha d'utilitzar la classe "PreparedStatement" per a preparar la consulta i després afegir els valors a canviar com a paràmetres.
 
 Per últim, mostra el numero de files afectades.
 
@@ -101,10 +101,10 @@ Per últim, mostra el numero de files afectades.
 
 ## Exercici 7
 
-Modifica el exercici 6 afegint una nova classe nomenada “Productes” dins del paquet de “utils”. Esta ha de tindre els mateixos atributs i amb el mateix nom que les columnes de la taula “productes2” de la base de dades.
+Modifica el exercici 6 afegint una nova classe nomenada "Productes" dins del paquet de "utils". Esta ha de tindre els mateixos atributs i amb el mateix nom que les columnes de la taula "productes2" de la base de dades.
 
 Afegeix també els mètodes getters i setters a la classe.
 
-Al mètode main(), després de la consulta de modificació anterior, afegeix una consulta que lliste tots els registres de la taula “productos2” de la base de dades i  els guarde en un ArrayList de productes. Per últim, utilitzant el Arraylist i les funcions pertinents de producte imprimeix els productes.
+Al mètode main(), després de la consulta de modificació anterior, afegeix una consulta que lliste tots els registres de la taula "productos2" de la base de dades i  els guarde en un ArrayList de productes. Per últim, utilitzant el Arraylist i les funcions pertinents de producte imprimeix els productes.
 
 ![Exercici](/uf12/exercici7.png)
