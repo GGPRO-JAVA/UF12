@@ -18,17 +18,17 @@ Alguns d'aquests mètodes són:
 - **boolean absolute(int row)**: Posiciona el cursor en el número de registre indicat. Cal tindre en compte que el primer registre és el 1, no el zero. Per exemple `absolute(7)` desplaçarà el cursor al seté registre. Si valor és negatiu es posiciona en el número de registre indicat però començant a comptar des del final (l'últim és el-1). Per exemple si té 10 registres i cridem absolute(-2) es desplaçarà al registre núm. 9.
 - **boolean relative(int registres)**: Desplaça el cursor un nombre relatiu de registres, que pot ser positiu o negatiu. Per exemple si el cursor està en el registre 5 i cridem a relative(10) es desplaçarà al registre 15. Si després cridem a relative(-4) es desplaçarà al registre 11.
 
-Els mètodes que retornen un tipus boolean retornaran ‘true’ si ha sigut possible moure el cursor a un registre vàlid, i ‘false’ en cas contrari, per exemple si no té cap registre o hem saltat a un número de registre que no existeix.
+Els mètodes que retornen un tipus boolean retornaran ‘true' si ha sigut possible moure el cursor a un registre vàlid, i ‘false' en cas contrari, per exemple si no té cap registre o hem saltat a un número de registre que no existeix.
 
 Tots aquests mètodes poden produir una excepció de tipus SQLException.
 
 També existeixen altres mètodes relacionats amb la posició del cursor.
 
 - **int getRow()**: Retorna el número de registre actual. Zero si no hi ha registre actual.
-- **boolean isBeforeFirst()**: Retorna ‘true’ si el cursor està abans del primer registre.
-- **boolean isFirst()**: Retorna ‘true’ si el cursor està en el primer registre.
-- **boolean isLast()**: Retorna ‘true’ si el cursor està en l'últim registre.
-- **boolean isAfterLast()**: Retorna ‘true’ si el cursor està després de l'últim registre.
+- **boolean isBeforeFirst()**: Retorna ‘true' si el cursor està abans del primer registre.
+- **boolean isFirst()**: Retorna ‘true' si el cursor està en el primer registre.
+- **boolean isLast()**: Retorna ‘true' si el cursor està en l'últim registre.
+- **boolean isAfterLast()**: Retorna ‘true' si el cursor està després de l'últim registre.
 
 ## 7.2 Obtenint dades del ResultSet
 

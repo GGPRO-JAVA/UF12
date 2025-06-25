@@ -6,6 +6,6 @@
 - Utilitzar les clàusules SQL fonamentals (FROM, WHERE, GROUP BY, HAVING, ORDER BY)
 - Aplicar operadors de comparació i lògics (AND, OR, NOT, BETWEEN, LIKE, IN, <, >, =, etc.)
 - Crear i gestionar connexions JDBC des de NetBeans
-- Entendre l’arquitectura de JDBC: DriverManager, Connection, Statement i ResultSet
+- Entendre l'arquitectura de JDBC: DriverManager, Connection, Statement i ResultSet
 - Executar sentències SQL des de Java
 - Obtenir dades d'una base de dades i treballar amb aquestes

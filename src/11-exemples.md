@@ -2,7 +2,7 @@
 
 ## Exemple 1
 
-Creació d’una base de dades senzilla de prova utilitzant sentències SQL.
+Creació d'una base de dades senzilla de prova utilitzant sentències SQL.
 
 **CONNEXIÓ A LA BASE DE DADES**
 
@@ -22,16 +22,16 @@ CREATE DATABASE prova;
 
 Per a evitar  haver de introduir en cada execució la identificació de la BD amb la que treballem (USE prova;) configurarem una nova connexió.
 
-- Fem clic dret en ‘MySQL (Connector/J driver)’ → `Connect Using...`
-- S’obrirà la finestra New Connection Wizard i en el camp Database posarem el nom de la nostra BD: prova.
+- Fem clic dret en ‘MySQL (Connector/J driver)' → `Connect Using...`
+- S'obrirà la finestra New Connection Wizard i en el camp Database posarem el nom de la nostra BD: prova.
 
 Apareixerà una nova connexió.
 
-**CREACIÓ D’UNA TAULA**
+**CREACIÓ D'UNA TAULA**
 
 - Seleccionem la connexió jdbc:mysql://localhost:3306/prova...  
 - Fem clic dret sobre ella → Execute Command
-- S'obrirà un panell en l'editor central on podrem introduir sentències SQL i després fer clic en la icona ‘Run SQL’.
+- S'obrirà un panell en l'editor central on podrem introduir sentències SQL i després fer clic en la icona ‘Run SQL'.
 
 ```sql
 CREATE TABLE venedors ( 
@@ -42,7 +42,7 @@ salari float NOT NULL default '0',
 PRIMARY KEY (id) ); 
 ```
 
-Nota: Depenent de com estiga configurada la nostra instal·lació podem trobar problemes al declarar el valor per defecte del camp de tipus date i posar-lo a 0’s. Si és així i no volem modificar el paràmetres de la instal·lació simplement eliminarem el text *default '0000-00-00'*.
+Nota: Depenent de com estiga configurada la nostra instal·lació podem trobar problemes al declarar el valor per defecte del camp de tipus date i posar-lo a 0's. Si és així i no volem modificar el paràmetres de la instal·lació simplement eliminarem el text *default '0000-00-00'*.
 
 **EXECUCIÓ DE SENTÈNCIES SQL**
 
@@ -67,9 +67,9 @@ PRACTICA
 
 ## Exemple 2
 
-Importació d’una base de dades i execució de consultes.
+Importació d'una base de dades i execució de consultes.
 
-NOTA IMPORTANT: L'objectiu d'aquesta pràctica és aprendre a importar una base de dades i fer algunes consultes bàsiques. El material aportat l’última part de l’exemple és molt més ampli i compren una part relacionada amb bases de dades i el llenguatge SQL amb la finalitat de que pugueu practicar o amplieu coneixements si vos interessa. Es a dir, el material aportat en aquesta última part és un material d’ajuda, no un contingut avaluable.
+NOTA IMPORTANT: L'objectiu d'aquesta pràctica és aprendre a importar una base de dades i fer algunes consultes bàsiques. El material aportat l'última part de l'exemple és molt més ampli i compren una part relacionada amb bases de dades i el llenguatge SQL amb la finalitat de que pugueu practicar o amplieu coneixements si vos interessa. Es a dir, el material aportat en aquesta última part és un material d'ajuda, no un contingut avaluable.
 
 **IMPORTACIÓ DE LA BD uf12_empresa.sql**
 
@@ -83,13 +83,13 @@ CREATE DATABASE uf12_empresa;
 
 Veurem que dins de la connexió ja ens apareix la nostra BD.
 
-- Fem clic dret en  ‘MySQL (Connector/J driver)’ → ‘Connect Using...’
-- S’obrirà la finestra New Connection Wizard i en el camp Database posarem el nom de la nostra BD: uf12_empresa.
+- Fem clic dret en  ‘MySQL (Connector/J driver)' → ‘Connect Using...'
+- S'obrirà la finestra New Connection Wizard i en el camp Database posarem el nom de la nostra BD: uf12_empresa.
 
 Apareixerà una nova connexió.
 
-- Anem al nostre navegador i introduïm en l’URL la paraula localhost (o bé la IPE 127.0.0.1).
-- S’ens obrirà la pantalla de Xampp i en el menú de capçalera farem clic en `phpMyAdmin`.
+- Anem al nostre navegador i introduïm en l'URL la paraula localhost (o bé la IPE 127.0.0.1).
+- S'ens obrirà la pantalla de Xampp i en el menú de capçalera farem clic en `phpMyAdmin`.
 - En la nova finestra ens situarem sobre la nostra BD i polsarem el botó `Importar`.
 
 ![SQL](/uf12/exemple2_1.png)
@@ -99,7 +99,7 @@ Apareixerà una nova connexió.
 ![SQL](/uf12/exemple2_2.png)
 
 - Una vegada seleccionada, ens desplaçarem al final de la pantalla i polsarem el botó `Importar`.
-- Podrem veure que s’ha incorporat un conjunt de taules a la nostra BD, les quals tenen ja totes registres creats.
+- Podrem veure que s'ha incorporat un conjunt de taules a la nostra BD, les quals tenen ja totes registres creats.
 
 ![SQL](/uf12/exemple2_3.png)
 
@@ -126,6 +126,6 @@ La taula COMANDES porta el compte de cada comanda remesa per un client, identifi
 
 **EXECUCIÓ DE CONSULTES**
 
-L’aprenentatge de SQL no forma part del contingut del nostre mòdul. No obstant això, hem inclòs aquest arxiu que conté una àmplia varietat de consultes SELECT sobre la base de dades que hem creat amb la finalitat de que pugueu practicar o amplieu coneixements. Es a dir, es tracta de material d’ajuda, no de contingut avaluable.
+L'aprenentatge de SQL no forma part del contingut del nostre mòdul. No obstant això, hem inclòs aquest arxiu que conté una àmplia varietat de consultes SELECT sobre la base de dades que hem creat amb la finalitat de que pugueu practicar o amplieu coneixements. Es a dir, es tracta de material d'ajuda, no de contingut avaluable.
 
-En la plataforma Aules trobarem l’arxiu uf12_empresa-SQL.txt que conté un joc de consultes on hi ha una amplia veritat d’instruccions SELECT amb tots els paràmetres que es poden utilitzar amb aquesta sentència.
+En la plataforma Aules trobarem l'arxiu uf12_empresa-SQL.txt que conté un joc de consultes on hi ha una amplia veritat d'instruccions SELECT amb tots els paràmetres que es poden utilitzar amb aquesta sentència.

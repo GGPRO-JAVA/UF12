@@ -2,10 +2,10 @@
 
 Per a  inserir nous registres necessitarem utilitzar, almenys, aquests dos mètodes:
 
-- **void moveToInsertRow()**: Desplaça el cursor al ‘registre d'inserció’. És un registre especial utilitzat per a inserir nous registres en el ResultSet. Posteriorment tindrem que cridar als mètodes updateXXX() ja coneguts per a establir els valors del registre d'inserció. Per a finalitzar cal cridar a insertRow().
-- **void insertRow()**: Inserida el ‘registre d'inserció’ en el ResultSet, passant a ser un registre normal més, i també l'insereix en la base de dades.
+- **void moveToInsertRow()**: Desplaça el cursor al ‘registre d'inserció'. És un registre especial utilitzat per a inserir nous registres en el ResultSet. Posteriorment tindrem que cridar als mètodes updateXXX() ja coneguts per a establir els valors del registre d'inserció. Per a finalitzar cal cridar a insertRow().
+- **void insertRow()**: Inserida el ‘registre d'inserció' en el ResultSet, passant a ser un registre normal més, i també l'insereix en la base de dades.
 
-El següent codi inserix un nou registre en la taula ‘clients’. Suposarem que conn és un objecte Connection previament creat:
+El següent codi inserix un nou registre en la taula ‘clients'. Suposarem que conn és un objecte Connection previament creat:
 
 ::: tabs
 == Java

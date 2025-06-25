@@ -10,7 +10,7 @@ Per a poder connectar-se a una base de dades MySQL/MariaDB des de l'explorador d
 
 ![XAMPP](/uf12/descargar_driver_mySQL-connector.png)
 
-No fa falta registrar-se per a descarregar-lo, només s’ha de prémer en “No thanks, just start my download.” Descomprimeix el ZIP i cerca l'arxiu mysql-connector-java-9.2.0.jar. Tingues en compte que el número de versió pot ser diferent a la que es mostra en la imatge.
+No fa falta registrar-se per a descarregar-lo, només s'ha de prémer en "No thanks, just start my download." Descomprimeix el ZIP i cerca l'arxiu mysql-connector-java-9.2.0.jar. Tingues en compte que el número de versió pot ser diferent a la que es mostra en la imatge.
 
 Ara **obri NetBeans**, veu al **panell `Services` → `Databases`**, fes **clic dret en l'opció `Drivers`** i selecciona l'opció **`New Driver`** del menú contextual. Es mostrarà el diàleg New JDBC Driver.
 
@@ -34,7 +34,7 @@ Fes clic en `Add...` i selecciona el fitxer *mysql-connector-java-9.2.0.jar* que
 ![XAMPP](/uf12/add_new_driver.png)
 
 >[!NOTE] <strong>NOTA:</strong>
->Si estàs utilitzant l'última versió de NetBeans és possible que en `Services` → `Databases` → `Drivers` ja t'aparega l'opció ‘MySQL (Connector/J driver)’. Malgrat això pot ser que necessites instal·lar el driver. Dona-li al driver amb clic dret → `Connect Using...` i comprova si en la finestra t'apareix el missatge "driver file is missing". En tal cas, dona-li a `Add driver` i selecciona l'arxiu jar esmentat anteriorment.
+>Si estàs utilitzant l'última versió de NetBeans és possible que en `Services` → `Databases` → `Drivers` ja t'aparega l'opció ‘MySQL (Connector/J driver)'. Malgrat això pot ser que necessites instal·lar el driver. Dona-li al driver amb clic dret → `Connect Using...` i comprova si en la finestra t'apareix el missatge "driver file is missing". En tal cas, dona-li a `Add driver` i selecciona l'arxiu jar esmentat anteriorment.
 
 Arribats a aquest punt ja tenim enllaçat el driver JDBC de MySQL/MariaDB des del Database Explorer. Ara el que ens queda és crear una connexió amb una base de dades MySQL/MariaDB.
 
@@ -52,12 +52,12 @@ Apareixerà la finestra `New Connection Wizard`:
 - **Database**: El nom de la base de dades a la qual volem accedir. Podem deixar aquest camp buit per a poder accedir a totes les que existisquen en el servidor.
 - **User Name**: Nom d'usuari. Utilitzarem *root* (administrador).
 - **Password**: Contrasenya de l'usuari. Ho deixarem en blanc ja que després d'instal·lar MySQL la contrasenya per defecte està buida. En el nostre cas per a practicar i aprendre això serà suficient, però en un entorn real tindríem que configurar una contrasenya robusta.
-- **JDBC URL**: La URL de connexió amb el format "jdbc:mysql://HOST:PORT" Es crea automàticament a partir de la informació anterior. És possible que incloga per defecte variables com ‘zeroDateTimeBehavior’ en la imatge.
+- **JDBC URL**: La URL de connexió amb el format "jdbc:mysql://HOST:PORT" Es crea automàticament a partir de la informació anterior. És possible que incloga per defecte variables com ‘zeroDateTimeBehavior' en la imatge.
 
 Fes clic en `Finalitzar`. Si tot va bé, en `Services` → `Databases` apareixerà una nova connexió anomenada *jdbc:mysql://localhost:3306… [root on Default schema]*.
 
 >[!NOTE] <strong>NOTA:</strong>
->Si falla a causa d'un error ‘server time zone’ pots solucionar-lo afegint a l'URL la variable serverTimezone amb el valor UTC: **jdbc:mysql://localhost:3306/?serverTimezone=UTC**
+>Si falla a causa d'un error ‘server time zone' pots solucionar-lo afegint a l'URL la variable serverTimezone amb el valor UTC: **jdbc:mysql://localhost:3306/?serverTimezone=UTC**
 
 ![XAMPP](/uf12/database_creada.png)
 
@@ -110,7 +110,7 @@ CREATE TABLE venedors (
 );
 ```
 
-Si tot ha anat bé dins de ‘prova → Tables’ veurem la nova taula. És possible que necessitem fer clic dret → Refresh (sobre prova) perquè s’actualitze la informació.
+Si tot ha anat bé dins de ‘prova → Tables' veurem la nova taula. És possible que necessitem fer clic dret → Refresh (sobre prova) perquè s'actualitze la informació.
 
 ![XAMPP](/uf12/taula_creada.png)
 
